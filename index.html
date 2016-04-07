@@ -6,6 +6,11 @@
         blockquote { background: lightgray; width: 600px; display: block; padding: 20px; }
         #sounds { width: 500px; }
     </style>
+    <script type="text/javascript">
+        function sayhello(name) {
+            alert("Hi " + name + ", what's good?");
+        }
+    </script>
 </head>
 <body>
     <h1>introduction to computer science</h1>
@@ -41,5 +46,12 @@
     
     <iframe width="420" height="315" src="https://www.youtube.com/embed/drsQLEU0N1Y" frameborder="0" allowfullscreen></iframe>
     
+    <h2>forms and javascript experiments</h2>
+    
+    <form name="">
+        Type in your name and click the button<br />
+        <input id="person_name" type="text" name="name" value="" />
+        <input id="button" type="button" name="button" onclick="sayhello(document.getElementById('person_name'))" />
+    </form>
 </body>
 </html>
