@@ -7,8 +7,12 @@
         #sounds { width: 500px; }
     </style>
     <script type="text/javascript">
-        function sayhello(name) {
-            alert("Hi " + name + ", what's good?");
+        function tweetSomething() {
+            var tweet = document.getElementById('tweet').value;
+            var listNode = document.createElement("li");                 
+            var tweetNode = document.createTextNode(tweet); 
+            listNode.appendChild(tweetNode);                           
+            document.getElementById("tweets").appendChild(listNode);
         }
     </script>
 </head>
@@ -49,9 +53,16 @@
     <h2>forms and javascript experiments</h2>
     
     <form name="">
-        Type in your name and click the button<br />
-        <input id="person_name" type="text" name="name" value="" />
-        <input id="button" type="button" name="button" onclick="sayhello(document.getElementById('person_name'))" />
+        <strong>Your Name</strong><br />
+        <input id="name" type="text" name="name" value="" /><br />
+        <strong>Say Something</strong><br />
+        <textarea id="tweet"></textarea>
+        <input id="button" type="button" name="button" onclick="tweetSomething()" />
     </form>
+    <div>
+        <ul id="tweets">
+            
+        </ul>
+    </div>
 </body>
 </html>
