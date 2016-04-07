@@ -1,6 +1,10 @@
 <html>
 <head>
     <title>West Seattle Website</title>
+    <style>
+        blockquote { background: gray; width: 600px; display: block; }
+        #sounds { width: 800px; }
+    </style>
 </head>
 <body>
     <h1>west seattle website</h1>
@@ -14,24 +18,30 @@
     <h2>Photos</h2>
     
     <ul>
-        <li><img src="https://github.com/westseattle/website/raw/master/assets/dog.jpg" width="400" /></li>
+        <li><img src="https://github.com/westseattle/website/raw/master/assets/dog.jpg" width="320" /></li>
         <li></li>
     </ul>
     
     <h2>Sounds</h2>
     
-    <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160646488&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <div id="sounds">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160646488&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
     
     <h2>Quotes</h2>
     
-    <blockquote>
-    "Listen close so I could hear it, about life and how not to fear it
-    How to grab the wheel and steer it, and so I
-    And so I did just that
-    Word of advice follow your dreams and never look back" - Logic
-    </blockquote>
+    <div id="quotes">
+        <blockquote>
+        "Listen close so I could hear it, about life and how not to fear it<br />
+        How to grab the wheel and steer it, and so I<br />
+        And so I did just that<br />
+        Word of advice follow your dreams and never look back" - Logic
+        </blockquote>
+    </div>
     
     <h2>Videos</h2>
+    
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/drsQLEU0N1Y" frameborder="0" allowfullscreen></iframe>
     
 </body>
 </html>
