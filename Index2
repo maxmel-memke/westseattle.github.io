@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title>West Seattle Website</title>
+    <style>
+        body { font-family: arial; }
+        blockquote { background: lightgray; width: 600px; display: block; padding: 20px; }
+        #sounds { width: 500px; }
+    </style>
+    <script type="text/javascript">
+        function tweetSomething() {
+            var tweet = document.getElementById('tweet').value;
+            var listNode = document.createElement("li");                 
+            var tweetNode = document.createTextNode(tweet); 
+            listNode.appendChild(tweetNode);                           
+            document.getElementById("tweets").appendChild(listNode);
+        }
+    </script>
+</head>
+<body>
+    <h1>introduction to computer science</h1>
+    
+    <h2>websites</h2>
+    
+    <ul>
+        <li><a href="http://larryteacher.github.io">Larry</a></li>
+    </ul>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/YX40hbAHx3s" frameborder="0" allowfullscreen></iframe>
+    
+	<h2>photos</h2>
+    
+    <img src="https://github.com/westseattle/website/raw/master/assets/dog.jpg" width="320" /></li>
+
+    <h2>sounds</h2>
+    
+    <div id="sounds">
+        <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/160646488&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    </div>
+    
+    <h2>quotes</h2>
+    
+    <div id="quotes">
+        <blockquote>
+        "Listen close so I could hear it, about life and how not to fear it<br />
+        How to grab the wheel and steer it, and so I<br />
+        And so I did just that<br />
+        Word of advice follow your dreams and never look back" - Logic
+        </blockquote>
+        <blockquote>
+        "The best time to plant a tree was twenty years ago,<br/>
+        the next best time is today"<br/>
+        </blockquote>
+    </div>
+
+		
+		
+		
+	
+    
+    <h2>videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/YX40hbAHx3s" frameborder="0" allowfullscreen></iframe>
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/drsQLEU0N1Y" frameborder="0" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/o6g130CewqE" frameborder="0" allowfullscreen></iframe>
+    <h2>forms and javascript experiments</h2>
+    
+    <form name="">
+        <strong>Your Name</strong><br />
+        <input id="name" type="text" name="name" value="" /><br />
+        <strong>Say Something</strong><br />
+        <textarea id="tweet"></textarea>
+        <input id="button" type="button" name="button" value="tweet" onclick="tweetSomething()" />
+    </form>
+    <div>
+        <ul id="tweets">
+            
+        </ul>
+    </div>
+</body>
+</html>
